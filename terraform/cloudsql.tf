@@ -33,7 +33,8 @@ resource "google_sql_database_instance" "db" {
   ]
 
   name                  = "db-${random_id.db_id.hex}" // TODO
-  database_version      = "MYSQL_5_7"
+  // database_version   = "MYSQL_5_7"
+  database_version      = "MYSQL_8.0.29"
   region                = var.region
   project               = data.google_project.service_project.project_id
   deletion_protection   = false
@@ -87,7 +88,7 @@ resource "google_secret_manager_secret" "db_creds" {
     google_project_service.secret_manager_api,
   ]
   secret_id = "mydb-credentials"
-  project               = data.google_project.service_project.project_id
+  project   = data.google_project.service_project.project_id
 
   replication {
     automatic = true
