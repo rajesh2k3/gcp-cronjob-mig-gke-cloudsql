@@ -1,16 +1,19 @@
 terraform {
   backend "gcs" {
-    bucket  = "jkwng-altostrat-com-tf-state"
-    prefix = "jkwng-cronjob-migration-dev-cloudfunctions"
+    bucket = "ws9kiam-db-com-tf-state"
+    prefix = "ws9kiam-cronjob-migration-dev-cloudfunctions"
+    // bucket  = "jkwng-altostrat-com-tf-state"
+    // prefix = "jkwng-cronjob-migration-dev-cloudfunctions"
   }
 
   required_providers {
     google = {
-      version = "~> 3.72.0"
+      // version = "~> 3.72.0"
+      version = "~> 4.24.0"
     }
     google-beta = {
-      version = "~> 3.72.0"
-
+      // version = "~> 3.72.0"
+      version = "~> 4.24.0"
     }
     null = {
       version = "~> 2.1"
