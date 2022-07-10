@@ -3,9 +3,7 @@ kind: Secret
 metadata:
   name: db-credentials
 stringData:
-  // db-username: dbuser
-  db-username: cirrus
+  db-username: dbuser
   db-password: ${DB_PASSWORD}
-  // db-name: employees
-  db-name: ws9kiam-db
+  db-name: employees
   
