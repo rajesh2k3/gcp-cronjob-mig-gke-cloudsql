@@ -6,7 +6,8 @@ locals {
   ]
 
   gke_default_cluster = {
-    name = ""
+    // name = ""
+    name = "gke-cluster-ws9kiam-dev"
     master_range = ""
     private_cluster = true,
     default_nodepool_machine_type = "e2-medium",
