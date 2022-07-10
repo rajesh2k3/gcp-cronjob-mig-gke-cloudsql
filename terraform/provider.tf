@@ -1,15 +1,17 @@
 terraform {
   backend "gcs" {
-    bucket  = "jkwng-altostrat-com-tf-state"
-    prefix = "jkwng-cronjob-migration-dev"
+    //bucket  = "jkwng-altostrat-com-tf-state"
+    //prefix = "jkwng-cronjob-migration-dev"
+    bucket  = "ws9kiam-dev-db-com-tf-state"
+    prefix = "ws9kiam-cronjob-migration-dev"
   }
 
   required_providers {
     google = {
-      version = "~> 3.72.0"
+      version = "~> 4.24.0"
     }
     google-beta = {
-      version = "~> 3.72.0"
+      version = "~> 4.24.0"
 
     }
     null = {
