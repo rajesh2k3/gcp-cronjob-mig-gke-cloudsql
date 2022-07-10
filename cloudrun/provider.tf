@@ -1,7 +1,9 @@
 terraform {
   backend "gcs" {
-    bucket  = "jkwng-altostrat-com-tf-state"
-    prefix = "jkwng-cloudrun-migration-dev-cloudrun"
+    bucket = "ws9kiam-db-com-tf-state"
+    prefix = "ws9kiam-cloudrun-migration-dev-cloudrun"
+    // bucket  = "jkwng-altostrat-com-tf-state"
+    // prefix = "jkwng-cloudrun-migration-dev-cloudrun"
   }
 
   required_providers {
