@@ -1,4 +1,5 @@
-FROM python:3.8-alpine
+FROM python:3.8.2-alpine
+//FROM python:3.8-alpine
 
 RUN apk update --no-cache && apk add bash
 
