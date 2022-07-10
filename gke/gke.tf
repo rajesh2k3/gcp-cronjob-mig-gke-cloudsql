@@ -5,10 +5,11 @@ locals {
     "roles/monitoring.viewer",
   ]
 
-  gke_default_cluster = {
+  gke_cluster = {
+  # gke_default_cluster = {
     // name = ""
     name = "gke-cluster-ws9kiam-dev"
-    master_range = ""
+    master_range = "10.0.6.0/28"
     private_cluster = true,
     default_nodepool_machine_type = "e2-medium",
     default_nodepool_initial_size = 1,
