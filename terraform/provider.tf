@@ -2,7 +2,7 @@ terraform {
   backend "gcs" {
     //bucket  = "jkwng-altostrat-com-tf-state"
     //prefix = "jkwng-cronjob-migration-dev"
-    bucket  = "ws9kiam-dev-db-com-tf-state"
+    bucket  = "ws9kiam-db-com-tf-state"
     prefix = "ws9kiam-cronjob-migration-dev"
   }
 
