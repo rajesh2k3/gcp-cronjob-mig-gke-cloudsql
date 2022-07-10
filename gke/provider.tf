@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
-    bucket  = "ws9kiam-db-com-tf-state"
-    prefix = "ws9kiam-cloudrun-migration-gke-dev"
+    bucket = "ws9kiam-db-com-tf-state"
+    prefix = "ws9kiam-cloudrun-migration-dev-gke"
   }
 
   required_providers {
