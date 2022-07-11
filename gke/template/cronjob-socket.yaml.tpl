@@ -11,7 +11,8 @@ spec:
           shareProcessNamespace: true
           containers:
           - name: etl
-            image: gcr.io/jkwng-images/cronjob-migration:latest
+            // image: gcr.io/jkwng-images/cronjob-migration:latest
+            image: gcr.io/ws9kiam-images/cronjob-migration:latest
             imagePullPolicy: Always
             command: ["/bin/bash"]
             args: 
