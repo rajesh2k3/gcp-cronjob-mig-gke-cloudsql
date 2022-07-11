@@ -1,5 +1,5 @@
 data "google_cloudfunctions_function" "function" {
-  project                    = data.google_project.service_project.project_id
+  project     = data.google_project.service_project.project_id
   region      = var.region
   name        = var.function_name
 }
