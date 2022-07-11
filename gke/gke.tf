@@ -10,6 +10,7 @@ locals {
     // name = ""
     name = "gke-cluster-ws9kiam-dev"
     master_range = "10.0.6.0/28"
+    region = "us-central1",
     private_cluster = true,
     default_nodepool_machine_type = "e2-medium",
     default_nodepool_initial_size = 1,
