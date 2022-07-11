@@ -10,7 +10,8 @@ then
     echo "      mysql # (when using \$HOME/.my.cnf)"
     echo "      'mysql -u something -psomepass -P3307'"
     echo "      'mysql --defaults-file=/some/path/my.cnf'"
-    echo "      \$HOME/sandboxes/msb_5_7_9/use"
+    // echo "      \$HOME/sandboxes/msb_5_7_9/use"
+    echo "      \$HOME/sandboxes/msb_8_0_29/use"
     echo ""
     exit 1
 fi
